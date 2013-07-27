@@ -34,12 +34,12 @@ var fndown = function(currentValue, newValue) {
     return newValue < currentValue;  
 };
 
-example.logic = [{fn: tadaa.up, sound:"up.ogg"}, {fn: fndown, sound:"down.ogg"}];
+example.logic = [{fn: tadaa.up, sound:"up.wav"}, {fn: fndown, sound:"down.wav"}];
 
 
 // Which audio player to use. The default is aplay. Configurable per plugin 
 // in case you want to use exotic file formats for the sounds.
-example.player = 'ogg123';
+example.player = 'aplay';
 
 
 module.exports = example;
