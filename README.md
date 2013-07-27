@@ -1,4 +1,4 @@
 tadaa-example
 =============
 
-Example tadaa plugin
+An example plugin for [tadaa](https://github.com/jamesbloomer/tadaa).
