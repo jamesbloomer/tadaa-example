@@ -41,5 +41,15 @@ example.logic = [{fn: tadaa.up, sound:"up.wav"}, {fn: fndown, sound:"down.wav"}]
 // in case you want to use exotic file formats for the sounds.
 example.player = 'aplay';
 
+// You can also implement multiple value functions and configure which one to use in 
+// the runners config. This is useful if you have slightly different things to do but 
+// with almost the same logic.
+example.otherGetValue = function(options, callback){
+	var number = Math.random() * (options.multiplier / 2);
+    console.log("otherGetValue function has been called with the number " + number);
+    
+    callback(null, number); 
+};
+
 
 module.exports = example;
