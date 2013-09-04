@@ -29,7 +29,9 @@ example.options = {
 example.interval = 2000;
 
 // Logic and sounds. Default is to check for simple up and down and play "up.wav" and "down.wav"
-// The example here swaps in some custom logic by using fndown
+// The example here swaps in some custom logic by using fndown. If any sounds are included in the
+// ./sounds directory of the plugin then these will be preferred over any in the tadaa-runner's 
+// sounds directory. 
 var fndown = function(currentValue, newValue) {
     return newValue < currentValue;  
 };
